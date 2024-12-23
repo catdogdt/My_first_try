@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head lang = "en">
+        <meta charset = "UTF-8">
+        
+        <title> STEM </title>
+        <link rel = "icon" type = "image/jpg" href = "/image/favicon.png">
+        <link rel = "stylesheet" href = "style_signup.css">
+        <script src="https://kit.fontawesome.com/a73ebaba7f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div id = "headerr">
+                <img id = "fvc" src = "/image/favicon.png"> 
+                <h1 id = "welcome"> Welcome to STEM website!</h1>
+            </div>
+            
+        </header>
+
+        <nav class = "navbar">
+            <ul>
+                <li id = "personal"> <a href = "signup.html"> Sign up </a> </li>
+                <li id = "personal"> <a href = "contact.html"> Contact </a> </li>
+                <li id = "personal"> <a href = "about.html"> About </a> </li>
+                <li id = "main"> <a href = "index.html"> Home </a> </li>
+                <li id = "main"> <a href = "Science.html"> Science </a> </li>
+                <li id = "main"> <a href = "Technology.html"> Technology </a> </li>
+                <li id = "main"> <a href = "Engineering.html"> Engineering </a> </li>
+                <li id = "main"> <a href = "Art.html"> Arts </a> </li>
+                <li id = "main"> <a href = "Mathematics.html"> Mathematics  </a> </li>
+
+            </ul>
+        </nav>
+
+        <main>
+            <h3 id = "register"> Register </h3>
+            <hr>
+            <div id = "signup">
+                <form action = "index.php" method = "POST" enctype = "multipart/form-data">
+                    <p id = "compulsory"> * </p>
+                    <label for = "username"> Username: </label>
+                    <input type = "text" id = "username" placeholder = "catdogdt" minlength = "6" required>
+                    <br> <br>
+                    <p id = "compulsory"> * </p>
+                    <label for = "password"> Password: </label>
+                    <input type = "password" id = "password" minlength = "6" maxlength = "20" required>
+                    <br> <br>
+                    <p id = "compulsory"> * </p>
+                    <label for = "email"> Email: </label>
+                    <input type = "email" id = "email" placeholder = "meowmeow@gmail.com" required>
+                    <br> <br>
+                    <label for = "phone"> Phone #: </label>
+                    <input type = "phone" id = "phone" placeholder = "0123-456-789" pattern = "[0-9]{4}-[0-9]{3}-[0-9]{3}">
+                    <br> <br>
+                    <label for = "bday"> Birthday: </label>
+                    <input type = "date" id = "bday"> 
+                    <br> <br>
+                    <label for = "experience"> Experience: </label>
+                    <input type = "number" id = "experience" min = "0" max = "99" value = "1"> 
+                    <p style = "display: inline; padding-left: 3px;"> year(s).</p>
+                    <br> <br>
+                    <label for = "male"> Male </label>
+                    <input type = "radio" id = "male" value = "male" name = "gen">
+                    <label for = "female" style = "padding-left: 10px;"> Female </label>
+                    <input type = "radio" id = "female" value = "female" name = "gen">
+                    <br> <br>
+                    <label for = "description"> Self-description: </label>
+                    <textarea type = "comment" rows = 3> </textarea>
+                    <br> <br>
+                    <label for = "file"> Avatar: </label>
+                    <input type = "file" id = "file" accept = "image/png">
+                    <br> <br>
+                    <input type = "reset">
+                    <input type = "submit">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <h3> Follow us </h3>
+            <a target = "_blank" href = "https://www.youtube.com/watch?v=yQlcOGzFrj0&list=RDMMyQlcOGzFrj0&start_radio=1"> <i class="fa-brands fa-square-twitter fa-2xl" style="color: #e2e2b6;"></i> </a>
+            <a target = "_blank" href = "https://www.youtube.com/watch?v=XMGcYBNpgrs&list=RDMMyQlcOGzFrj0&index=2"> <i class="fa-brands fa-square-facebook fa-2xl" style="color: #e2e2b6;"></i> </i> </a>
+            <a target = "_blank" href = "https://www.youtube.com/watch?v=zDNOhR-Ms-I&list=RDMMyQlcOGzFrj0&index=7"> <i class="fa-brands fa-square-threads fa-2xl"  style="color: #e2e2b6;"> </i> </a>
+            <h3> INFERNO Copyright © 2024 Inferno - All rights reserved || Designed By: Sally Nguyen </h3>
+        </footer>
+    </body>
+</html>
